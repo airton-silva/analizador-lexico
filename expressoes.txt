@@ -1,0 +1,2 @@
+total = saldo + taxa * 100 ;
+saque = saida - total ;

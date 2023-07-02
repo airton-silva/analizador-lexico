@@ -1,0 +1,18 @@
+O retorno do analizador [total = saldo + taxa * 100 ;
+] e: 
+total E um Lexema < id: 1>
+= E um simbolo de atribuicao <=>
+saldo E um Lexema < id: 2>
++ E um operador de Adicao <+>
+taxa E um Lexema < id: 3>
+* E um operador de Multiplicacao <*>
+100 E um Lexema mapeado em um token   < id: 4>
+;
+ Nao pertence aos leximas
+O retorno do analizador [saque = saida - total ;] e: 
+saque E um Lexema < id: 1>
+= E um simbolo de atribuicao <=>
+saida E um Lexema < id: 2>
+- E um operador de Subtracao <->
+total E um Lexema < id: 3>
+;E um delimitador de fim de expressao<;>
