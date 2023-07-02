@@ -60,9 +60,12 @@ class Compilador:
                     imprime += caracteres[i]+" E um simbolo de abertura de um parentese" + " <" + caracteres[i] + ">"'\n' 
                 if(caracteres[i] == ")"):
                     imprime += caracteres[i]+" E um simbolo de fechamento de um parentese" + " <" + caracteres[i] + ">"'\n'
-
+            #Se delimitador de fim de expressão
             elif caracteres[i] == ';':
-                imprime += caracteres[i]+"E um delimitador de fim de expressao"+ " <"+ caracteres[i] + ">"'\n'           
+                imprime += caracteres[i]+"E um delimitador de fim de expressao"+ " <"+ caracteres[i] + ">"'\n'
+            #Se identificador de string
+            elif caracteres[i] == '"' or caracteres[i] == "'":
+                imprime += caracteres[i]+"E uma variavel do tipo string"+ " <"+ caracteres[i] + ">"'\n'               
             #Não é um Lexema Reconhecido
             else:
                 imprime += caracteres[i]+" Nao pertence aos leximas"'\n'
